@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_10">
+    <androidx.appcompat.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:contentInsetStartWithNavigation="0dp"
+            app:title=""
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            >
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                    android:id="@+id/info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextViewTitle"
+                    android:text="Mover"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:clickable="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/transparente"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_40"
+            app:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            android:layout_marginTop="@dimen/spacing_middle"
+            android:gravity="center"
+            android:text="Seleccionada"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <TextView
+                android:id="@+id/num_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="1"
+                android:textSize="15dp"
+                android:elevation="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"/>
+
+        <LinearLayout
+                android:background="@color/white"
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:minHeight="?attr/actionBarSize"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/client_avatar"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="?attr/actionBarSize"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@android:color/transparent"
+                        android:tint="@color/grey_40"
+                        android:src="@drawable/avatar" />
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+                    <TextView
+                            android:id="@+id/client_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="..."
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/grey_40" />
+                    <TextView
+                            android:id="@+id/client_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="..."
+                            android:layout_marginLeft="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                </LinearLayout>
+
+
+                <View
+                        android:layout_width="@dimen/spacing_smlarge"
+                        android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+        <RadioButton
+                android:id="@+id/up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arriba de"
+                android:textColor="@color/grey_40"
+                app:fontFamily="sans-serif-medium"
+                android:visibility="gone"
+                />
+
+        <RadioButton
+                android:id="@+id/down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abajo de"
+                android:textColor="@color/grey_40"
+                app:fontFamily="sans-serif-medium"
+                android:checked="true"/>
+    </RadioGroup>
+    <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_40"
+            app:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Seleccionada Cobro de referencia"/>
+    <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner"
+            android:layout_marginBottom="10dp"
+            style="@style/EditTextLogin"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <TextView
+                android:id="@+id/num_count_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="1"
+                android:textSize="15dp"
+                android:elevation="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"/>
+
+        <LinearLayout
+                android:background="@android:color/white"
+                android:id="@+id/container_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:minHeight="?attr/actionBarSize"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/client_avatar_"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="?attr/actionBarSize"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@android:color/transparent"
+                        android:tint="@color/grey_40"
+                        android:src="@drawable/avatar" />
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+                    <TextView
+                            android:id="@+id/client_name_"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="..."
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/grey_40" />
+                    <TextView
+                            android:id="@+id/client_address_"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="..."
+                            android:layout_marginLeft="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                </LinearLayout>
+
+
+                <View
+                        android:layout_width="@dimen/spacing_smlarge"
+                        android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <Button
+            android:id="@+id/Btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Mover"
+            android:background="@drawable/btn_login"
+            android:textColor="#fff"
+            android:textSize="24dp"
+            android:fontFamily="sans-serif-condensed"
+            android:enabled="false"
+            android:layout_margin="30dp"/>
+</LinearLayout>

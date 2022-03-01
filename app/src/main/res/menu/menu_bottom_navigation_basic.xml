@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_recent"
+        android:icon="@drawable/ic_home_black_32dp"
+        android:title="Inicio" />
+
+    <item
+        android:id="@+id/navigation_favorites"
+        android:icon="@drawable/ic_apps_black_32dp"
+        android:title="Rutas" />
+
+    <item
+        android:id="@+id/navigation_nearby"
+        android:icon="@drawable/ic_event_note_black_24dp"
+        android:title="Notas" />
+
+</menu>

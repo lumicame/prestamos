@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+        <item
+                android:id="@+id/nav_clients"
+                android:icon="@drawable/ic_person_outline_black_24dp"
+                android:title="@string/clients"/>
+    <item
+            android:id="@+id/nav_employee"
+            android:icon="@drawable/ic_group_black_32dp"
+            android:title="@string/employee"/>
+        <item
+                android:id="@+id/nav_history"
+                android:icon="@drawable/ic_history_black_24dp"
+                android:title="@string/history_loands"
+                android:visible="false"/>
+        <item
+                android:id="@+id/nav_trans"
+                android:icon="@drawable/ic_monetization_on_black_24dp"
+                android:title="@string/charges"/>
+    <item
+            android:id="@+id/nav_history_charges"
+            android:icon="@drawable/ic_monetization_on_black_24dp"
+            android:title="@string/history_charges"/>
+        <item
+                android:id="@+id/nav_loands"
+                android:icon="@drawable/ic_credit_card_black_32dp"
+                android:title="@string/loands"
+                android:visible="false"/>
+
+    <item android:title="@string/option">
+        <menu>
+            <item
+                    android:id="@+id/nav_settings"
+                    android:icon="@drawable/ic_settings_black_32dp"
+                    android:title="@string/menu_settings"/>
+            <item
+                    android:id="@+id/nav_exit"
+                    android:icon="@drawable/ic_exit_to_app_black_24dp"
+                    android:title="@string/exit"/>
+        </menu>
+    </item>
+
+</menu>

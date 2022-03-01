@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+  <LinearLayout
+          android:id="@+id/container"
+          android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:background="@drawable/card_add_employee"
+  android:layout_marginTop="10dp"
+  android:padding="5dp"
+  android:clickable="true">
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/client_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/avatar"
+            android:layout_marginStart="8dp"
+    android:layout_gravity="center_vertical"/>
+<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:orientation="vertical"
+android:layout_weight="1"
+android:layout_gravity="center_vertical">
+  <TextView
+          android:id="@+id/client_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          tools:text="@tools:sample/full_names"
+          android:textSize="20sp"
+          android:textColor="@android:color/black"
+          android:layout_marginStart="8dp" />
+
+  <TextView
+          android:id="@+id/client_nit"
+          android:layout_width="285dp"
+          android:layout_height="20dp"
+          tools:text="@tools:sample/lorem[4:10]"
+          android:layout_marginStart="8dp"
+          android:layout_marginEnd="8dp" />
+</LinearLayout>
+
+
+      <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:layout_gravity="center"
+              >
+
+          <androidx.appcompat.widget.AppCompatRatingBar
+                  android:id="@+id/ratingBar"
+                  style="@style/Yellow.Small.AppCompatRatingBar.White"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:clickable="false"
+                  android:numStars="5"
+                  android:rating="3.5"
+                  android:stepSize="1"
+                  android:theme="@style/Yellow.Small.AppCompatRatingBar.White" />
+
+          <TextView
+                  android:id="@+id/client_points"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="4.5"
+                  android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                  android:textColor="@color/colorPrimary" />
+
+      </LinearLayout>
+
+
+
+  </LinearLayout>
+  </LinearLayout>

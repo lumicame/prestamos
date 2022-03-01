@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+  <RelativeLayout
+          android:id="@+id/container"
+          android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:background="@drawable/card_add_employee"
+  android:layout_marginTop="10dp"
+  android:padding="5dp"
+  android:clickable="true">
+<de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_check_white_32dp"
+        android:tint="@color/colorPrimary"
+        android:background="#2FBD1F"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"/>
+<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:orientation="vertical"
+android:layout_weight="1"
+android:layout_gravity="center_vertical">
+  <TextView
+          android:id="@+id/route_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          tools:text="@tools:sample/full_names"
+          android:textSize="20sp"
+          android:textColor="@android:color/black"
+          android:layout_marginStart="8dp" />
+
+  <TextView
+          android:id="@+id/route_description"
+          android:layout_width="285dp"
+          android:layout_height="20dp"
+          tools:text="@tools:sample/lorem[4:10]"
+          android:layout_marginStart="8dp"
+          android:layout_marginEnd="8dp" />
+</LinearLayout>
+
+  </RelativeLayout>
+  </LinearLayout>

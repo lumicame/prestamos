@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_10"
+            android:orientation="vertical">
+        <LinearLayout
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimary">
+            <TextView
+                    android:id="@+id/info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextViewTitle"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/add_egress"
+                    android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical"
+                      android:background="@drawable/card_add_employee"
+                      android:layout_margin="10dp"
+        >
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/descrip_egress"
+                    style="@style/TextViewCardTitle"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+            />
+            <EditText
+                    android:id="@+id/egress_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/EditTextLogin"
+                    android:drawableLeft="@drawable/ic_mode_edit_blue_32dp"
+                    android:text=""
+                    android:lines="2"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_egress"
+                    style="@style/TextViewCardTitle"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+
+            />
+            <EditText
+                    android:id="@+id/total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/EditTextLogin"
+                    android:drawableLeft="@drawable/ic_monetization_on_black_24dp"
+                    android:inputType="number"/>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:gravity="center"
+                          android:layout_margin="10dp"
+            >
+                <Button
+                        android:id="@+id/pay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/save"
+                        android:textColor="@color/white"
+                        android:textSize="22dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/buttonok"
+                        android:padding="5dp"
+                        android:layout_marginRight="10dp"
+                android:enabled="false"/>
+                <Button
+                        android:id="@+id/cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cancel"
+                        android:textColor="@color/white"
+                        android:textSize="22dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#FF5722"
+                        android:padding="5dp"
+                        android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

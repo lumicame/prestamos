@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+  <LinearLayout
+          android:background="@android:color/white"
+          android:id="@+id/container"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_margin="5dp">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:minHeight="?attr/actionBarSize"
+            android:orientation="horizontal">
+
+      <ImageButton
+              android:layout_width="?attr/actionBarSize"
+              android:layout_height="?attr/actionBarSize"
+              android:background="@android:color/transparent"
+              android:tint="@color/grey_40"
+              app:srcCompat="@drawable/ic_apps_black_32dp" />
+
+      <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:orientation="vertical">
+        <TextView
+                android:id="@+id/name_route"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/load"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/grey_40" />
+        <TextView
+                android:id="@+id/description_route"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/load"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/grey_40" />
+      </LinearLayout>
+
+
+      <View
+              android:layout_width="@dimen/spacing_smlarge"
+              android:layout_height="wrap_content" />
+
+      <ImageButton
+              android:id="@+id/bt_toggle_items"
+              android:layout_width="?attr/actionBarSize"
+              android:layout_height="?attr/actionBarSize"
+              android:background="?attr/selectableItemBackgroundBorderless"
+              android:tint="@color/grey_40"
+              app:srcCompat="@drawable/ic_arrow_drop" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/lyt_expand_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_middle"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+      <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginEnd="@dimen/spacing_smlarge"
+              android:layout_marginLeft="?attr/actionBarSize"
+              android:layout_marginRight="@dimen/spacing_smlarge"
+              android:layout_marginStart="?attr/actionBarSize"
+              android:gravity="center_vertical"
+              android:minHeight="@dimen/spacing_mxlarge"
+              android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/num_clients"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+        <TextView
+                android:id="@+id/num_clients_route"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+      </LinearLayout>
+
+      <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginEnd="@dimen/spacing_smlarge"
+              android:layout_marginLeft="?attr/actionBarSize"
+              android:layout_marginRight="@dimen/spacing_smlarge"
+              android:layout_marginStart="?attr/actionBarSize"
+              android:gravity="center_vertical"
+              android:minHeight="@dimen/spacing_mxlarge"
+              android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/capital"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+        <TextView
+                android:id="@+id/capital_route"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+      </LinearLayout>
+
+      <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginEnd="@dimen/spacing_smlarge"
+              android:layout_marginLeft="?attr/actionBarSize"
+              android:layout_marginRight="@dimen/spacing_smlarge"
+              android:layout_marginStart="?attr/actionBarSize"
+              android:gravity="center_vertical"
+              android:minHeight="@dimen/spacing_mxlarge"
+              android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/textView7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/gain"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+        <TextView
+                android:id="@+id/gain_route"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+      </LinearLayout>
+
+      <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginEnd="@dimen/spacing_smlarge"
+              android:layout_marginLeft="?attr/actionBarSize"
+              android:layout_marginRight="@dimen/spacing_smlarge"
+              android:layout_marginStart="?attr/actionBarSize"
+              android:gravity="center_vertical"
+              android:minHeight="@dimen/spacing_mxlarge"
+              android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cobrado"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+        <TextView
+                android:id="@+id/paidout_route"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+      </LinearLayout>
+      <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginEnd="@dimen/spacing_smlarge"
+              android:layout_marginLeft="?attr/actionBarSize"
+              android:layout_marginRight="@dimen/spacing_smlarge"
+              android:layout_marginStart="?attr/actionBarSize"
+              android:gravity="center_vertical"
+              android:minHeight="@dimen/spacing_mxlarge"
+              android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pending"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+        <TextView
+                android:id="@+id/pending_route"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+      </LinearLayout>
+      <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginEnd="@dimen/spacing_smlarge"
+              android:layout_marginLeft="?attr/actionBarSize"
+              android:layout_marginRight="@dimen/spacing_smlarge"
+              android:layout_marginStart="?attr/actionBarSize"
+              android:gravity="center_vertical"
+              android:minHeight="@dimen/spacing_xlarge"
+              android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/total_route"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textStyle="bold" />
+
+        <TextView
+                android:id="@+id/total_routes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textStyle="bold" />
+
+      </LinearLayout>
+
+    </LinearLayout>
+  </LinearLayout>
+
+</LinearLayout>

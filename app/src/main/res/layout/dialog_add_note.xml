@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#00000000">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_10">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/add_note"
+                android:gravity="center"
+                android:textSize="34dp"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:layout_marginBottom="10dp"
+        />
+
+        <EditText
+                android:id="@+id/add_note_name"
+                style="@style/EditTextLogin"
+                android:layout_height="wrap_content"
+                android:minLines="2"
+                android:drawableLeft="@drawable/ic_mode_edit_blue_32dp"
+                android:layout_marginTop="10dp"/>
+        <Button
+                android:id="@+id/add_note_btn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/save"
+                android:background="@drawable/btn_login"
+                android:textColor="#fff"
+                android:textSize="24dp"
+                android:paddingRight="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:enabled="false"
+                android:layout_gravity="bottom"
+        android:drawableRight="@drawable/ic_save_blue_32dp"/>
+    </LinearLayout>
+</ScrollView>
